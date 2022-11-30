@@ -1,5 +1,5 @@
 function [n] = order(val, base)
-%ORDER Oblicza rząd wielkości liczby val względem podstawy base (10).
+%ORDER Oblicza rząd wielkości liczby val względem podstawy base (domyślnie 10).
 if nargin < 2
     base = 10;
 end

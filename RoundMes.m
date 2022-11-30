@@ -1,5 +1,5 @@
 function var = RoundMes(x, ux, print_mode)
-%ROUNDMES - zaokrągla wynik pomiaru x do rzędu drugiej cyfry niepewności ux
+%ROUNDMES zaokrągla wynik pomiaru x do rzędu drugiej cyfry niepewności ux
 %Dla dodatkowego argumentu print_mode = 1 zaokrągla pomiar do czterech cyfr
 
 if isa(x, 'sym')

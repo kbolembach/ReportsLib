@@ -1,5 +1,6 @@
 function [unc] = UncBarr(delta_x, vars)
-%Zwraca niepewność standardową typu B dla niepewności przyrządu pomiarowego
+%UNCBARR Wyznacza niepewność standardową typu B dla niepewności przyrządu
+%pomiarowego.
 %Dla parsowania pojedynczej wartości użyj:
 %u_b(wektor_delt)
 %Dla parsowania wielu wartości(wektora) względem tych samych delt, użyj: 

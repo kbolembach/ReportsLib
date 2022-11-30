@@ -1,7 +1,8 @@
 function  Plot(arg_x, arg_y, plot_title, plot_xlabel, plot_ylabel, plot_legend, errorbars)
-%PLOT Wykreśla wykres wielości fizycznych arg_x i arg_y z tytułem plot_title,
+%PLOT Tworzy wykres wielości fizycznych arg_x i arg_y z tytułem plot_title,
 %oznaczeniami osi plot_xlabel, plot_ylabel oraz legendą wykresu plot_legend
-%(cell array). Ustaw errorbars = 0 by nie wykreślać prostokątów niepewności na wykresie.
+%(cell array). 
+% Użyj errorbars = 0 by nie wykreślać prostokątów niepewności na wykresie.
 
 arguments
     arg_x Quantity

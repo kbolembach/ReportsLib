@@ -1,7 +1,6 @@
 function PlotErrorBars(qx, qy)
-%PLOTERRORBARS Helper function used to plot error bars on a graph given
-%quantities qx, qy. PLotted error bars are just the respective quantities'
-%uncertainities.
+%PLOTERRORBARS Funkcja pomocnicza do rysowania errorbarów na wykresie
+%wielkości qx, qy. Errorbary reprezentują niepewności tych wartości.
 x = GetValue(qx, 1);
 y = GetValue(qy, 1);
 xerr = GetUncertainty(qx, 1);

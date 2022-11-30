@@ -1,5 +1,5 @@
 function Q = QuantityAB(fn_name, index, arg_names, arg_vals, deltas, output_type)
-%QUANTITYB Wyznacza niepewność typu AB. Drukuje równanie niepewności typu
+%QUANTITYAB Wyznacza niepewność typu AB. Drukuje równanie niepewności typu
 %AB oraz podstawia pod nie niepewności pomiarowe. Oblicza niepewność i 
 %zaokrągla odpowiednio wartość.
 %> fn_name - nazwa funkcji (string);

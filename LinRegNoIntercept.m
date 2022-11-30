@@ -1,7 +1,7 @@
 function [fit, a, u_a] = LinRegNoIntercept(x,y)
-%LINREG Dla danych wejściowych x, y przeprowadza w prosty sposób regresje
-%liniową. Zwraca kolejno model regresji liniowej fit, współczynik
-%kierunkowy prostej najlepszego dopasowania a oraz jego niepewność u_a,
+%LINREGNOINTERCEPT Dla danych wejściowych x, y przeprowadza w prosty sposób 
+%regresje liniową. Zwraca kolejno model regresji liniowej fit, współczynik
+%kierunkowy prostej najlepszego dopasowania a oraz jego niepewność u_a.
 %Wersja NoIntercept zapewnia wyraz wolny b = 0.
 %Funkcja wypisuje także te wartości na ekran wraz z R^2.
 

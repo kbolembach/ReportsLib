@@ -1,4 +1,4 @@
-function out = PrintVal(Value,Unc)
+function out = PrintVal(value, unc)
 %PRINTVAL Dla podanej wielkości fizycznej drukuje jej wartość jako string,
 %uwzględniając ilość zer przy zaokrągleniu zgodnie z niepewnością.
 %Funkcja może przyjąć struct z wielkością fizyczną jako jedyny argument.
@@ -6,18 +6,18 @@ function out = PrintVal(Value,Unc)
 %funkcji roundMes.
 
 if nargin == 1
-    Unc = Value.Uncertainty;
-    Value = Value.Value;
+    unc = value.Uncertainty;
+    value = value.value;
 end
 
-out = PrintNum(Value);
+out = PrintNum(value);
 decimalPlaces = strfind(out, '.') - strlength(out);
 if isempty(decimalPlaces)
     decimalPlaces = 0;
 end
 
-targetDecimalPlaces = LSBorder(Unc);
-test = strrep(PrintNum(Unc), "0", "");
+targetDecimalPlaces = LSBorder(unc);
+test = strrep(PrintNum(unc), "0", "");
 test = strrep(test, ".", "");
 if strlength(test) == 1
     isUncSingleDigit = true;

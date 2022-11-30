@@ -1,7 +1,6 @@
 function subbed_eq = SubstituteC(equation, args)
 %SUBSTITUTEC Dla danego równania niepewności złożonej equation zapisanego w 
-%formacie LaTeX podstawia pod zmienne określone w tablicy argnames ich wartości
-%określone w tablicy args.
+%formacie LaTeX podstawia pod zmienne ich wartości określone w tablicy args.
 
 argnames = GetLatexName(args);
 subbed_eq = convertStringsToChars(equation);

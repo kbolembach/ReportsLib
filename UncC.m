@@ -1,8 +1,7 @@
 function [unc] = UncC(an_fn, sym_xj, xj, mode)
-%UNCC Wyznacza niepewność złożoną funkcji F ze zmiennymi sym_xj
-%następnie podstawia pod te zmienne xj.Value oraz używa także niepewności 
-%tych zmiennych xj.Uncertainty.
-%Ewentualnie dla u_xj == "exact" by uzyskać niezaokrąglony wynik.
+%UNCC Wyznacza niepewność złożoną funkcji anonimowej an_fn ze zmiennymi
+%symbolicznymi sym_xj i wielkościami Quantity xj.
+%Sprecyzuj mode == "exact" by uzyskać niezaokrąglony wynik.
 if nargin == 3 || mode == "exact"
     sum = 0;
     pd = pdArr(an_fn, sym_xj);

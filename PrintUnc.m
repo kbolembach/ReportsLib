@@ -16,7 +16,7 @@ if isstring(in)
 end
 
 if isa(in, 'sym')
-   [in units_in] = separateUnits(in);
+   [in, units_in] = separateUnits(in);
    if in == floor(in)
        out = string(in);
    else
@@ -25,7 +25,7 @@ if isa(in, 'sym')
 end
 
 if isa(in, 'Quantity')
-    [in units_in] = separateUnits(in.Uncertainty);
+    [in, units_in] = separateUnits(in.Uncertainty);
 end
 
 out = PrintNum(in);

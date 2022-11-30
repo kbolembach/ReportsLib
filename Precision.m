@@ -1,5 +1,5 @@
 function [result] = Precision(val, precentage, n, LSB)
-%PRECISION Oblicza dokładność pomiarową.
+%PRECISION Oblicza dokładność pomiarową np. dla pomiaru z multimetru.
 %> val - wartość mierzona;
 %> precentage - procent z wartości mierzonej (z tablic);
 %> n - liczba stojąca przy "dgt";

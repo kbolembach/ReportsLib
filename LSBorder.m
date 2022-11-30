@@ -1,6 +1,8 @@
 function out = LSBorder(in)
-%LSBORDER Zwraca rząd najmniej znaczącej cyfry liczby (jako wykładnik 10^x)
+%LSBORDER Zwraca rząd najmniej znaczącej cyfry liczby (jako wykładnik
+%10^x).
 
+% Przypadek 1: in==0 
 if string(in) == "0"
     out = 0;
 else
@@ -10,6 +12,7 @@ else
         out_str = in;
     end
     
+    % Przypadek 2: in wyrażony jako eksponenta
     if contains(out_str, "e")
         exponent = extractBetween(out_str, strfind(out_str, 'e')+1, strlength(out_str));
         exponent = str2num(exponent);
@@ -19,6 +22,7 @@ else
                                     strfind(out_str, '.')+1, strfind(out_str, 'e')-1));
         end
         out = exponent;
+    % Przypadek 3: in wyrażony bez eksponenty
     else
         if endsWith(out_str, ".0")
             out_str = extractBetween(out_str, 1, strlength(out_str)-2);

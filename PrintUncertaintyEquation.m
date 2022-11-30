@@ -1,6 +1,6 @@
 function [eq] = PrintUncertaintyEquation(type, an_fn, fn_name, argsymlist, args, nvargs)
 %PRINTUNCERTAINTYEQUATION Dla równania w postaci funkcji anonimowej an_fn i 
-%o nazwie fn_name  oraz zmiennych symbolicznych argsymlist i tablicy symboli 
+%o nazwie fn_name oraz zmiennych symbolicznych argsymlist i tablicy symboli 
 %argsymlist, wypisuje równanie niepewności określonego typu "A", "B", "AB",
 % lub "C". Funkcja zwraca string zawierający gotowe równanie w formacie LaTeX.
 
