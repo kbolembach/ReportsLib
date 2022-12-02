@@ -60,6 +60,7 @@ elseif endsWith(fn_name_unceq, "_")
 end
 
 %
+args_from_anfn = @(f)strsplit(regexp(func2str(f), '(?<=^@\()[^\)]*', 'match', 'once'), ',');
 symarr = sym(args_from_anfn(an_fn));
 %
 unc_eq = PrintUncertaintyEquation("C", an_fn, str2sym(fn_name_unceq), symarr, args, self_uncertainty = nvargs.self_uncertainty);

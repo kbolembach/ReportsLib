@@ -21,7 +21,6 @@ function obj = B(fn_name, arg_names, arg_vals, deltas, nvargs)
 %* latexname - nazwa funkcji w formacie LaTeX
 
 %parsowanie argumentów
-
 arguments
     fn_name
     arg_names
