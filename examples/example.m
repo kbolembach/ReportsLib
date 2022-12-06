@@ -15,7 +15,7 @@ c = Quantity.Constant("c", 299792458 * u.m / u.s);
 hc = Quantity.Constant("hc", sym(1.98644586 * 10^(-25)));
 
 %% Równania
-an_quadratic = @(a, b, c) c - (b^2 / (4*a)) ;
+an_quadratic = @(a, b, c) c - (b^2 / (4*a));
 an_x0 = @(a, b) -b/(2*a);
 an_DeltaU = @(U2, U1) U2 - U1;
 an_E = @(e, deltaU) e *  deltaU;
