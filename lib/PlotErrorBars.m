@@ -13,11 +13,12 @@ arguments
    nvargs.offset = 1
 end
 
-x = GetValue(qx, 1);
-y = GetValue(qy, 1);
+x = GetValue(qx);
+y = GetValue(qy);
 
-xerr = GetUncertainty(qx, 1);
-yerr = GetUncertainty(qy, 1);
+xerr = GetUncertainty(qx);
+yerr = GetUncertainty(qy);
+
 errorbar(x(nvargs.offset:nvargs.step:end), y(nvargs.offset:nvargs.step:end), ...
     yerr(nvargs.offset:nvargs.step:end), yerr(nvargs.offset:nvargs.step:end), ...
     xerr(nvargs.offset:nvargs.step:end), xerr(nvargs.offset:nvargs.step:end), nvargs.style);
